@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    margin: 10rem 0 0 0;
+    overflow: hidden;
+    font: 18px Verdana, sans-serif;
+}
+
+.container {
+    width: 20%;
+    background-color: white;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    box-shadow: 0 0 20px #888;
+}
+
+.radio { 
+    order: 1;
+    appearance: none;
+    padding: .4rem;
+}
+.radio::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.radio:checked::before {
+    background-color: gray;
+}
+
+.card {
+    display: none;
+    width: 100%;
+    padding: 5rem 1rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.person {
+    color: #888;
+}
+
+#radio1:checked ~ .card1 {
+    display: block;
+}
+#radio2:checked ~ .card2 {
+    display: block;
+}
+#radio3:checked ~ .card3 {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 80%;
+    }
+}

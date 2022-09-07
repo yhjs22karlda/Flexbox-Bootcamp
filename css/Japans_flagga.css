@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 51vw; /* förhållande 3:2 */
+    height: 34vw;
+    background-color: white;
+    margin: 1rem auto;
+    box-shadow: 0 0 1rem #aaa; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sol {
+    width: 20vw;
+    height: 20vw; /* 60% av höjden */
+    background-color: #bc002d;
+    border-radius: 50%;
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    overflow: hidden;
+    font: 18px Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    display: flex;
+}
+
+.opt {
+    height: 3rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.opt:hover {
+    background-color: gray;
+}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    margin: 8rem 0 0 0;
+    font: 18x Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover ;
+}
+.pic {
+    width: 40%;
+    margin-top: 30%;
+    padding-top: 40%;
+    position: relative;
+    border-radius: 50%;
+    
+}
+
+#x {
+    position: absolute;
+    font-size: 24px;
+    color: #aaa;
+    top: .6rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.text {
+    text-align: center;
+}
+.name {
+    font: bold 24px Verdana;
+    margin: 1rem 0 .6rem;
+}
+.title {
+    color: #aaa;
+    font: bold 20px Verdana;
+    margin: .5rem;
+}
+button {
+    margin: 4rem 1rem 1rem;
+    font: 18px Verdana;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+button:hover {background-color: #666;}
+button:active {background-color: black;}
+
+@media screen and (max-width: 800px) {
+    .container {width: 80%;}
+}
