@@ -11,34 +11,50 @@ body {
     font: 18px Verdana, sans-serif;
 }
 
-.container {
+.menu {
     width: 100%;
     background-color: lightgray;
-    margin: 0;
-    display: flex;
-}
-
-.opt {
     height: 3rem;
-    /* flex-grow: 1; */
+}
+
+.menu ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 0 1.5rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
 }
 
-.opt:hover {
-    background-color: gray;
-}
 
-.pic {
+.menu img {
     height: 3rem;
     padding: .5rem 1rem;
+}
+
+.menu ul li:first-child {
     margin-right: auto;
 }
 
-.pic img {
+.menu ul li {
     height: 100%;
-    /* object-fit: scale-down; */
+    flex-basis: 100px;
 }
+
+.menu ul li a {
+    text-decoration: none;
+    color: #222;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li:not(:first-child) a:hover {
+    background-color: gray;
+    color: white;
+}
+.menu ul li:not(:first-child) a:active {
+    background-color: black;
+}
+

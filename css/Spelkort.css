@@ -7,7 +7,7 @@ body {
     height: 100vh;
     background-color: lightgray;
     margin: 8rem 0 0 0;
-    font: 26px Verdana, sans-serif;
+    font: 44px Verdana, sans-serif;
     overflow: hidden;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .card > div {
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 .card div:nth-child(1) {
@@ -32,7 +32,7 @@ body {
 
 .card div:nth-child(2) {
     align-self: center;
-    font-size: 50px;
+    font-size: 120px;
 }
 
 .card div:nth-child(3) {

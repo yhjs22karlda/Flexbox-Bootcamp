@@ -11,73 +11,54 @@ body {
     font: 18px Verdana, sans-serif;
 }
 
-.container {
+.menu {
     width: 100%;
     background-color: lightgray;
-    margin: 0;
-    display: flex;
-}
-
-.opt {
     height: 3rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 0 1.5rem;
+    justify-content: space-between;
 }
 
-.opt:hover {
-    background-color: gray;
+.menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style-type: none;
 }
 
-.opt:active {
-    background-color: black;
-    color: white;
-}
 
-.pic {
+.menu img {
     height: 3rem;
     padding: .5rem 1rem;
-    margin-right: auto;
 }
 
-.pic img {
+.menu ul li {
     height: 100%;
 }
 
-.button {
-    height: 2rem;
-    align-self: center;
-    margin-left: auto;
-    margin-right: 1rem;
-    border: 1px solid black;
-    padding: 0 1rem;
-    border-radius: .4rem;
-    font-family: inherit;
-    background-color: #lightgray;
-    cursor: pointer;
+.menu ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 2rem;
+    color: #222;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.button:hover {
+.menu ul li a:hover, .menu button:hover {
     background-color: gray;
     color: white;
 }
-
-.button:active {
+.menu ul li a:active, .menu button:active {
     background-color: black;
-    color: white;
 }
 
-@media screen and (max-width: 800px) {
-    .container {
-        flex-direction: column;
-    }
-    .pic {
-        margin: 0;
-        text-align: center;
-    }
-    .button {
-        margin: 0 0 .7rem;
-    }
+.menu button {
+    align-self: center;
+    margin: 0 1rem;
+    padding: .3rem .8rem;
+    border: 1px solid #888;
+    border-radius: 5px;
 }

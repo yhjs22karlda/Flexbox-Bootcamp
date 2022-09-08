@@ -8,23 +8,27 @@ body {
     background-color: lightgray;
     margin: 8rem 0 0 0;
     font: 14px Verdana, sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .card {
     width: 80vw;
-    height: 32vw;
+    /* height: 32vw; */
     background-color: white;
     margin: 0 auto;
     display: flex;
 }
 .pic {
     position: relative;
+    margin: 0;
+    flex-basis: 50%;
+    align-self: stretch;
 }
 .text {
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 .text h1 {
     font-size: 30px;
@@ -45,6 +49,7 @@ body {
     right: 2rem;
 }
 img {
+    min-width: 200px;
     width: 100%;
     display: block;
 }
